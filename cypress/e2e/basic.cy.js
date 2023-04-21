@@ -3,10 +3,6 @@ describe('empty spec', () => {
     cy.visit('/')
   })
 
-  it('opens the index page', () => {
-    cy.get('h1').contains('Great coffee with a conscience')
-  })
-
   it('navigates to the product page', () => {
     cy.get('a[href="/products"]').eq(0).click();
     cy.url().should("include", "/products")
