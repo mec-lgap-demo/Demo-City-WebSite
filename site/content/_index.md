@@ -1,7 +1,7 @@
 ---
 title: 出茂市
 subtitle: 公式Webサイトにようこそ
-image: img/illustrations-coffee-gear.svg
+image: img/title.png
 blurb:
   heading: 出茂市のご案内
   text: 出茂市は三重県中部に位置する自然豊かな街です。
