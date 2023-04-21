@@ -6,8 +6,8 @@ media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
+  - name: "くらし" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "くらし" # Used in the UI, ie.: "New Post"
     folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -16,8 +16,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "post1" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post1" # Used in the UI, ie.: "New Post"
+  - name: "子育て" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "子育て" # Used in the UI, ie.: "New Post"
     folder: "site/content/post1" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -26,8 +26,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "post2" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post2" # Used in the UI, ie.: "New Post"
+  - name: "福祉" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "福祉" # Used in the UI, ie.: "New Post"
     folder: "site/content/post2" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -36,8 +36,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "post3" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post3" # Used in the UI, ie.: "New Post"
+  - name: "市政" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "市政" # Used in the UI, ie.: "New Post"
     folder: "site/content/post3" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
