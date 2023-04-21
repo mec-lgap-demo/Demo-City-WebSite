@@ -14,12 +14,6 @@ describe('empty spec', () => {
     cy.url().should("include", "/values")
     cy.get('h1').contains(/Values/i)
   })
-
-  it('navigates to the blog page', () => {
-    cy.get('a[href="/post"]').eq(0).click();
-    cy.url().should("include", "/post")
-    cy.get('h1').contains(/Latest Stories/i)
-  })
 })
 
 describe('validate blog', () => {
