@@ -6,8 +6,8 @@ media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "くらし" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "くらし" # Used in the UI, ie.: "New Post"
+  - name: "緊急情報" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "緊急情報" # Used in the UI, ie.: "New Post"
     folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -16,9 +16,49 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "子育て" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "子育て" # Used in the UI, ie.: "New Post"
+  - name: "イベント" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "イベント" # Used in the UI, ie.: "New Post"
     folder: "site/content/post1" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "暮らし" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "暮らし" # Used in the UI, ie.: "New Post"
+    folder: "site/content/post2" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "こども" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "こども" # Used in the UI, ie.: "New Post"
+    folder: "site/content/post3" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "健康" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "健康" # Used in the UI, ie.: "New Post"
+    folder: "site/content/post4" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "住まい" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "住まい" # Used in the UI, ie.: "New Post"
+    folder: "site/content/post5" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
@@ -28,46 +68,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "福祉" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "福祉" # Used in the UI, ie.: "New Post"
-    folder: "site/content/post2" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "市政" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "市政" # Used in the UI, ie.: "New Post"
-    folder: "site/content/post3" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "観光" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "観光" # Used in the UI, ie.: "New Post"
-    folder: "site/content/post4" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "介護" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "介護" # Used in the UI, ie.: "New Post"
-    folder: "site/content/post5" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "上下水道" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "上下水道" # Used in the UI, ie.: "New Post"
     folder: "site/content/post6" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -76,8 +76,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "税金" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "税金" # Used in the UI, ie.: "New Post"
+  - name: "仕事" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "仕事" # Used in the UI, ie.: "New Post"
     folder: "site/content/post7" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -86,8 +86,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "ごみ環境" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "ごみ環境" # Used in the UI, ie.: "New Post"
+  - name: "行政" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "行政" # Used in the UI, ie.: "New Post"
     folder: "site/content/post8" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -96,8 +96,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "健康医療" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "健康医療" # Used in the UI, ie.: "New Post"
+  - name: "施設" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "施設" # Used in the UI, ie.: "New Post"
     folder: "site/content/post9" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -106,8 +106,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "緊急情報" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "緊急情報" # Used in the UI, ie.: "New Post"
+  - name: "広報" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "広報" # Used in the UI, ie.: "New Post"
     folder: "site/content/post10" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
