@@ -4,52 +4,28 @@
 
 {{ partial "short-text" .Params.blurb}}
 
-<table>
-    <tr>
-        <td>
-            {{ partial "blog" . }}
-        </td>
-        <td>
-            {{ partial "blog1" . }}
-        </td>
-        <td>
-            {{ partial "blog2" . }}
-        </td>
-        <td>
-            {{ partial "blog3" . }}
-        </td>
-    </tr>
-    <tr>
-        <td>
-            {{ partial "blog4" . }}
-        </td>
-        <td>
-            {{ partial "blog5" . }}
-        </td>
-        <td>
-            {{ partial "blog6" . }}
-        </td>
-        <td>
-            {{ partial "blog7" . }}
-        </td>
-    </tr>
+{{ partial "blog" . }}
 
+{{ partial "blog1" . }}
 
-    <tr>
-        <td>
-            {{ partial "blog8" . }}
-        </td>
-        <td>
-            {{ partial "blog9" . }}
-        </td>
-        <td>
-            {{ partial "blog10" . }}
-        </td>
-        <td>
-            {{ partial "blog11" . }}
-        </td>
-    </tr>
+{{ partial "blog2" . }}
 
-</table>
+{{ partial "blog3" . }}
+
+{{ partial "blog4" . }}
+
+{{ partial "blog5" . }}
+
+{{ partial "blog6" . }}
+
+{{ partial "blog7" . }}
+
+{{ partial "blog8" . }}
+
+{{ partial "blog9" . }}
+
+{{ partial "blog10" . }}
+
+{{ partial "blog11" . }}
 
 {{ end }}
