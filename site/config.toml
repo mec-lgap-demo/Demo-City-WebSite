@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "ja-JP"
 languageLang = "ja"
-title = "Homepage"
+title = "Demo-City Web Site."
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 
