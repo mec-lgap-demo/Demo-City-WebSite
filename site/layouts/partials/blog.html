@@ -5,12 +5,10 @@
 
 		<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
 			{{ range first 4 (where .Data.Pages "Type" "post") }}
-				<div class="ph1-ns w-50-ns flex">
-					<p class="mid-gray lh-title mb2">{{ .Date.Format "2006,01,2" }}</p>
-					<p class="f3 b lh-title mb primary">{{ .Title }}</p>
-					<p class="f3 mb ">{{ .Content }}</p>
-				</div>
-			{{ end }}
+			<div class="ph1-ns w-50-ns flex">
+				{{ .Render "li" }}
+			</div>
+		{{ end }}
 		</div>
 
 		<div class="tc">
