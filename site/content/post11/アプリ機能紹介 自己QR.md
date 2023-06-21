@@ -7,3 +7,8 @@ description: スマホアプリにあなたの電子名刺を格納できます�
 スマホアプリにあなたの電子名刺を格納できます。
 
 [アプリ機能紹介 自己ＱＲ](https://www.youtube.com/watch?v=FhXcZ5kMRGc)
+
+
+[![アプリ機能紹介 自己ＱＲ](http://img.youtube.com/vi/FhXcZ5kMRGc/0.jpg)](https://www.youtube.com/watch?v=FhXcZ5kMRGc)
+
+
